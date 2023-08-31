@@ -3,11 +3,12 @@ import "../styles/Header.css";
 const Header = () => {
   return (
     <header className="Encabezado transparent-bottom">
-      <h1>Fotos</h1>
-      <h1>Fotos</h1>
-      <h1>Información</h1>
-      <h1>Costos</h1>
-      <h1>Contactos</h1>
+      <h2>Inicio</h2>
+      <h2>Fotos</h2>
+      <h2>Fotos</h2>
+      <h2>Información</h2>
+      <h2>Costos</h2>
+      <h2>Contactos</h2>
     </header>
   );
 };
