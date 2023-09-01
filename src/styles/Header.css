@@ -3,7 +3,10 @@
   position: sticky;
   top: 0;
   height: 55%;
-  background-color: #f7951ecb;
+  background: #14c01dbc; /* fallback for old browsers */
+  box-shadow: 0 0 5px 0;
+  border-radius: 0 0 5px 5px;
+
   display: flex;
 }
 
