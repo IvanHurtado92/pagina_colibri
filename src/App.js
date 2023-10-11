@@ -1,13 +1,12 @@
 import "./App.css";
 import Header from "./components/Header";
+import Logo from "./components/Logo";
 
 function App() {
   return (
     <div>
       <Header />
-      <p>holaaaaa</p>
-      <p>adios</p>
-      <h1>Aqui va el logo del salon</h1>
+      <Logo />
     </div>
   );
 }

@@ -1,3 +1,5 @@
 # Página del salón de fiestas colibrí
 
-## Proyecto creado con el objetivo de practicar y ayudar a mi familia a promocionar nuestro negocio
+## Proyect created with the intention to practice and helping my familiy's bussiness
+
+# The main tools used in this proyect are React and Tailwind

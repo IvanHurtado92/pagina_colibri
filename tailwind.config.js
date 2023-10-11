@@ -6,7 +6,7 @@ module.exports = {
       // qué hace extend?
       // https://tailwindcss.com/docs/theme#extending-the-default-theme
       colors: {
-        verde_mamalon: "#2EDF59",
+        verde_pro: "#2EDF59",
       },
     },
   },

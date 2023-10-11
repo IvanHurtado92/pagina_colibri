@@ -2,23 +2,31 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 55%;
   background: #14c01dbc; /* fallback for old browsers */
   box-shadow: 0 0 5px 0;
-  border-radius: 0 0 5px 5px;
-
+  /* border-radius: 0 0 5px 5px; */
   display: flex;
+  height: 15%;
+  max-height: 10vh;
 }
 
-h2 {
+.Titulo {
   margin: 0.7rem 3rem 0.7rem 3rem;
+  font-size: xx-large;
   color: white;
+  background: none;
+  border: none;
 }
 
-/* .transparent-bottom {
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-} */
+.Titulo:hover {
+  color: black;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white;
+  transition: color 1s, text-shadow 1s;
+}
+
+/* make a class for the logo to be the size of the header height */
+.Logo {
+  /* //make the logo height to fit inside the header */
+  height: 90%;
+  width: auto;
+}
