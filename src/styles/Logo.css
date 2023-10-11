@@ -7,7 +7,6 @@
 /* make a class that makes it's text brigter */
 
 .brighter {
-  color: white;
   text-shadow: 0 0 15px white;
   transition: color 1s, text-shadow 1s;
 }
