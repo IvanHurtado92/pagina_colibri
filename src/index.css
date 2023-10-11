@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  width: 100%;
   background: #00f260; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -20,6 +21,7 @@ body {
     #00f260
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  scroll-behavior: smooth;
 }
 
 code {
@@ -28,6 +30,6 @@ code {
 }
 
 html {
-  scroll-behavior: smooth;
   height: 100vh;
+  min-width: fit-content;
 }
