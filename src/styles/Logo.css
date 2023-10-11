@@ -1,8 +1,9 @@
 /* make the background color of the logo a bit darker */
 
-/* .colibri {
-  height: 50vh;
-} */
+.colibri {
+  width: 40vw;
+  height: auto;
+}
 
 /* make a class that makes it's text brigter */
 
