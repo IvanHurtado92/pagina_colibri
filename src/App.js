@@ -4,15 +4,25 @@ import Inicio from "./components/Inicio";
 import Fotos from "./components/Fotos";
 import Info from "./components/Info";
 
-const disenios = "min-h-400 md:min-h-400 lg:min-h-450 xl:500 2xl:600"; //corregir!!!!
+const disenioInicio =
+  "px-20 pt-12 pb-20 text-center h-screen overflow-hidden min-h-500 md:min-h-400 lg:min-h-450 xl:min-h-500 2xl:min-600 ";
+
+const disenioSeccion =
+  "p-20 text-center h-screen overflow-hidden min-h-400 md:min-h-500 lg:min-h-450 xl:min-h-500 2xl:min-600 "; //corregir!!!!
+
+const tituloClaro =
+  "text-slate-50 text-3xl brighter md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 2xl:text-emerald-400 xl:text-blue-500 lg:text-red-700 md:text-yellow-400";
+
+const tituloOscuro =
+  "text-slate-950 text-3xl brighter md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 2xl:text-emerald-400 xl:text-blue-500 lg:text-red-700 md:text-yellow-400";
 
 function App() {
   return (
     <div>
       <Header />
-      <Inicio className={disenios} />
-      <Fotos className={disenios} />
-      <Info className={disenios} />
+      <Inicio className={disenioInicio} titulos={tituloClaro} />
+      <Fotos className={disenioSeccion} titulos={tituloClaro} />
+      <Info className={disenioSeccion} titulos={tituloOscuro} />
     </div>
   );
 }
