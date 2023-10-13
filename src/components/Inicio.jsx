@@ -1,9 +1,11 @@
 import logo from "../Images/logoSalon.png";
-import "../styles/Logo.css";
+import "../styles/Inicio.css";
 
-const Logo = () => {
+
+const Inicio = ({className}) => {
+  const clases = "px-20 pt-12 pb-20 text-center h-screen overflow-hidden " + className;
   return (
-    <div className="m-20 text-center">
+    <div className={clases}>
       <div className="justify-center flex">
         <img
           src={logo}
@@ -19,4 +21,6 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+
+
+export default Inicio;

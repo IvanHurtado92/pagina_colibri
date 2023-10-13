@@ -11,3 +11,8 @@
   text-shadow: 0 0 15px white;
   transition: color 1s, text-shadow 1s;
 }
+
+/* aplicar  */
+.contenedor {
+  @apply bg-slate-500;
+}

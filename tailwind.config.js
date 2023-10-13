@@ -5,6 +5,16 @@ module.exports = {
     extend: {
       // qué hace extend?
       // https://tailwindcss.com/docs/theme#extending-the-default-theme
+
+      minHeight: {
+        300: "300px",
+        400: "400px",
+        450: "450px",
+        500: "500px",
+        550: "550px",
+        600: "600px",
+        650: "650px",
+      },
       colors: {
         text: {
           50: "var(--text-50)",
