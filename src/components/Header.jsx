@@ -8,10 +8,12 @@ const Header = () => {
         {/* Boton de inicio, regresará hasta arriba */}
         <img src={logo} className="Logo" alt="Logo del Salón Colibrí"></img>
       </button>
-      <button className="Titulo">Fotos</button>
-      <button className="Titulo">Información y Costos</button>
-      <button className="Titulo">Contactos</button>
-      <button className="Titulo">Visítanos</button>
+      <button className="Rm Titulo">Fotos</button>
+      <button className="Rm Titulo">Información y Costos</button>
+      <button className="Rm Titulo">Contactos</button>
+      <button className="Rm Titulo">Visítanos</button>
+      <button id="menu" className="Titulo absolute inset-y-0 right-0 text-4xl" style={{height:"90%"}}><ion-icon name="menu"></ion-icon></button>
+      
     </header>
   );
 };
