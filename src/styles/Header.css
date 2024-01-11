@@ -27,6 +27,12 @@
   transition: color 1s, text-shadow 1s;
 }
 
+.Hamb{
+  color: black;
+  background: none;
+  border: none;
+}
+
 /* make a class for the logo to be the size of the header height */
 .Logo {
   /* //make the logo height to fit inside the header */
@@ -34,29 +40,29 @@
   width: auto;
 }
 
-@media screen and (max-width: 1060px){
-  .Rm{
+@media screen and (max-width: 1060px) {
+  .Rm {
     color: transparent;
     visibility: hidden;
     transition: color 0.5s, visibility 0.5s;
     display: none;
   }
-  #menu{
+  #menu {
     color: white;
-    visibility:visible;
+    visibility: visible;
     transition: color 0.5s, visibility 0.5s;
     display: block;
   }
 }
 
-@media screen and (min-width: 1061px){
-  .Rm{
+@media screen and (min-width: 1061px) {
+  .Rm {
     color: white;
-    visibility:visible;
+    visibility: visible;
     transition: color 0.5s, visibility 0.5s;
     display: block;
   }
-  #menu{
+  #menu {
     color: transparent;
     visibility: hidden;
     display: none;
