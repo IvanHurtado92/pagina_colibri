@@ -36,15 +36,29 @@
 
 @media screen and (max-width: 1060px){
   .Rm{
+    color: transparent;
+    visibility: hidden;
+    transition: color 0.5s, visibility 0.5s;
     display: none;
   }
   #menu{
+    color: white;
+    visibility:visible;
+    transition: color 0.5s, visibility 0.5s;
     display: block;
   }
 }
 
 @media screen and (min-width: 1061px){
+  .Rm{
+    color: white;
+    visibility:visible;
+    transition: color 0.5s, visibility 0.5s;
+    display: block;
+  }
   #menu{
+    color: transparent;
+    visibility: hidden;
     display: none;
   }
 }
