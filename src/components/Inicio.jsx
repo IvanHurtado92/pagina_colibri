@@ -14,6 +14,8 @@ const Inicio = ({ className, titulos }) => {
       </div>
 
       <b className={titulos}>Salón de Fiestas Infantiles Colibrí</b>
+      <br />
+      <h1 style={{color:"white",fontSize:"1.2rem"}}><i>Dándote un espacio de felicidad desde 2005</i></h1>
     </div>
   );
 };

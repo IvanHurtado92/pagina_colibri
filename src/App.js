@@ -9,10 +9,10 @@ const disenioInicio =
   "px-20 pt-12 pb-20 text-center overflow-hidden min-h-screen  ";
 
 const disenioSeccion =
-  "p-20 pt-28 text-center h-screen overflow-hidden min-h-screen md:min-h-400 lg:min-h-450 xl:min-h-500 2xl:min-600 "; //corregir!!!!
+  "p-20 pt-28 text-center overflow-hidden min-h-screen max-h-fit"; //corregir!!!!
 
 const tituloClaro =
-  "text-slate-50 text-3xl brighter md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ";
+  "text-slate-50 text-3xl brighter md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl";
 
 const tituloOscuro =
   "text-slate-950 text-3xl brighter md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ";

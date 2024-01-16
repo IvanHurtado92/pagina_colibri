@@ -1,6 +1,14 @@
 import "../styles/Header.css";
 import logo from "../Images/colibri_cabeza.png";
+import HambComp from "./HambComp";
 import { useState } from "react";
+
+const componentes = [
+  { nombre: "Fotos", funcion: null },
+  { nombre: "Información y Costos", funcion: null },
+  { nombre: "Contactos", funcion: null },
+  { nombre: "Visitanos", funcion: null },
+];
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,19 +18,19 @@ const Header = () => {
     console.log(isMenuOpen);
   };
 
+  // if (window.innerWidth >1060) setIsMenuOpen(false) // hay un error aqui, no se si sea por llamar dos veces la funcion setIsMenuOpen
+
   return (
     <div>
-      <header className="Encabezado h-12 text-2xl  2xl:h-24 2xl:text-4xl xl:h-20 xl:text-3xl lg:h-18 lg:text-2xl md:h-14 md:text-3xl overflow-hidden">
+      <header className="Encabezado z-20 h-12 text-2xl  2xl:h-24 2xl:text-4xl xl:h-20 xl:text-3xl lg:h-18 lg:text-2xl md:h-14 md:text-3xl">
         <button className="mx-4 my-1 w-24">
           {/* Boton de inicio, regresará hasta arriba */}
           <img src={logo} className="Logo" alt="Logo del Salón Colibrí"></img>
         </button>
-        <button className="Rm Titulo">Fotos</button>
-        <button className="Rm Titulo">Información y Costos</button>
-        <button className="Rm Titulo">Contactos</button>
-        <button className="Rm Titulo">Visítanos</button>
 
-        
+        {componentes.map((comp) => {
+          return <button className="Rm Titulo">{comp.nombre}</button>;
+        })}
 
         <button
           name="Hamburguesa"
@@ -37,20 +45,23 @@ const Header = () => {
 
       {/* Conditional rendering for the menu */}
       {isMenuOpen && (
-        <div className="z-10 absolute right-2 top-14 border border-solid border-black bg-emerald-200 min-h-fit w-4/12 text-sm rounded-lg overflow-hidden">
+        <div
+          id="Hamburguesa"
+          className="z-10 absolute right-2 md:top-14 sm:top-12 border border-solid border-black bg-emerald-200 min-h-fit min-w-fit text-2xl 2xl:text-4xlxl:text-3xl lg:text-2xl md:text-3xl rounded-lg overflow-hidden"
+        >
           <div className="block text-center">
-            <button className="Hamb text-center m-1">Fotos</button>
-            <br />
-            <button className="Hamb text-center m-1">Información y Costos</button>
-            <br />
-            <button className="Hamb text-center m-1">Contactos</button>
-            <br />
-            <button className="Hamb text-center m-1">Visítanos</button>
+            {componentes.map((comp) => {
+              return (
+                <div>
+                  <HambComp nombre={comp.nombre} />
+                  <br />
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
     </div>
-    
   );
 };
 

@@ -18,7 +18,7 @@ const Info = ({ className, titulos }) => {
     <div className={clases}>
       <b className={titulos}>Información y Costos</b>
       <div className="h-20"></div>
-      <div className="grid grid-cols-3 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
         <div className="lista">
           <ul>
             <li><b>Costo</b></li>
@@ -35,10 +35,12 @@ const Info = ({ className, titulos }) => {
             <li>Puente colgante, resbaladilla y tubo de bomberos</li>
             <li><i>Inflable con costo adicional de $400</i></li>
             <li>Cocina con estufa, refrigerador y hielera</li>
+            <br />
           </ul>
         </div>
-        <div>Imagen de vista exterior del salón
+        <div>
           <img src={img1} alt="Imagen de vista exterior del salón" className="border-2 border-solid border-black rounded-md " />
+          <br />
           {/* <br />
           <button onClick={accion} className="btn bg-emerald-600 border border-solid border-black rounded">{text}</button> */}
         </div>
