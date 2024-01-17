@@ -43,7 +43,7 @@ const Header = () => {
         </button>
       </header>
 
-      {/* Conditional rendering for the menu */}
+      {/* Conditional rendering for the menu  "short-circuit evaluation."*/}
       {isMenuOpen && (
         <div
           id="Hamburguesa"

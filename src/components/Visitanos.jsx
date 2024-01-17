@@ -15,6 +15,7 @@ export default function Visitanos({ className, titulos }) {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           className="outline outline-4 outline-black outline-offset-0"
+          title="ubi"
         ></iframe>
       </div>
     </div>
