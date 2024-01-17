@@ -14,15 +14,15 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const abrirMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
+    setIsMenuOpen(!isMenuOpen); //cada que se usa el método set, el componente se recarga con la variable cambiada y todos los cambios al componente que involucre
+    console.log(!isMenuOpen);
   };
 
   // if (window.innerWidth >1060) setIsMenuOpen(false) // hay un error aqui, no se si sea por llamar dos veces la funcion setIsMenuOpen
 
   return (
-    <div>
-      <header className="Encabezado z-20 h-12 text-2xl  2xl:h-24 2xl:text-4xl xl:h-20 xl:text-3xl lg:h-18 lg:text-2xl md:h-14 md:text-3xl">
+    <div className="sticky top-0 z-20">
+      <header className="Encabezado h-12 text-2xl  2xl:h-24 2xl:text-4xl xl:h-20 xl:text-3xl lg:h-18 lg:text-2xl md:h-14 md:text-3xl">
         <button className="mx-4 my-1 w-24">
           {/* Boton de inicio, regresará hasta arriba */}
           <img src={logo} className="Logo" alt="Logo del Salón Colibrí"></img>

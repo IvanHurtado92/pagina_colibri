@@ -1,7 +1,4 @@
 .Encabezado {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   background: #14c01dbc; /* fallback for old browsers */
   box-shadow: 0 0 5px 0;
   /* border-radius: 0 0 5px 5px; */

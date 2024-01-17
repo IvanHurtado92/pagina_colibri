@@ -6,7 +6,7 @@ import Info from "./components/Info";
 import Visitanos from "./components/Visitanos";
 
 const disenioInicio =
-  "px-20 pt-12 pb-20 text-center overflow-hidden min-h-screen  ";
+  "p-20 pt-28 text-center overflow-hidden min-h-screen  ";
 
 const disenioSeccion =
   "p-20 pt-28 text-center overflow-hidden min-h-screen max-h-fit"; //corregir!!!!
