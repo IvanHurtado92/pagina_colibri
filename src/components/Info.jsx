@@ -41,6 +41,7 @@ const Info = ({ className, titulos }) => {
             <br />
           </ul>
         </div>
+        
         <div>
           <img
             src={img1}

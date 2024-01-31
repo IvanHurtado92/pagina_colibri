@@ -32,34 +32,38 @@
   width: auto;
 }
 
-@media screen and (max-width: 1074px) {
-  .Rm {
-    color: transparent;
-    visibility: hidden;
-    transition: color 0.5s, visibility 0.5s;
+@media screen and (max-width:1010px){
+  .Rm{
     display: none;
   }
+}
+
+@media screen and (max-width: 1074px) {
+  .Rm {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
   #menu {
-    color: white;
     visibility: visible;
-    transition: color 0.5s, visibility 0.5s;
-    display: block;
+    opacity: 1;
+    transition: opacity 0.2s;
   }
 }
 
 @media screen and (min-width: 1075px) {
   .Rm {
-    color: white;
     visibility: visible;
-    transition: color 0.5s, visibility 0.5s;
-    display: block;
+    opacity: 1;
+    transition: opacity 0.5s;
+    
   }
   #menu {
-    color: transparent;
     visibility: hidden;
-    display: none;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
   }
-  #Hamburguesa{
+  #DivHamb{
     visibility: hidden;
     display: none;
   }
