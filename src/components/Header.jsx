@@ -45,10 +45,11 @@ const Header = () => {
       </header>
 
       {/* Conditional rendering for the menu  "short-circuit evaluation."*/}
-      {isMenuOpen && (
+      
         <div
           id="DivHamb"
           className="z-10 absolute right-2 md:top-14 sm:top-12 border border-solid border-black bg-emerald-200 min-h-fit min-w-fit text-2xl 2xl:text-4xlxl:text-3xl lg:text-2xl md:text-3xl rounded-lg overflow-hidden"
+          style={{"opacity": isMenuOpen ? 0 : 1}}
         >
           {/* Acomodar el menu usando anchor en cuanto ya sea funcional en los navegadores */}
           <div className="block text-center">
@@ -62,7 +63,6 @@ const Header = () => {
             })}
           </div>
         </div>
-      )}
     </div>
   );
 };

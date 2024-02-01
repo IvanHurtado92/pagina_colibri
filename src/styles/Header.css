@@ -48,6 +48,9 @@
     opacity: 1;
     transition: opacity 0.2s;
   }
+  #DivHamb{
+    visibility: visible;
+  }
 }
 
 @media screen and (min-width: 1075px) {
@@ -64,10 +67,12 @@
   }
   #DivHamb{
     visibility: hidden;
-    display: none;
   }
 }
 
+#DivHamb{
+  transition: opacity 0.5s, visibility 0.5s;
+}
 /* #TopLogo:hover{ no se ve cool
   box-shadow: 0 0 5px white, 0 0 10px white;
   transition: text-shadow 1s;
