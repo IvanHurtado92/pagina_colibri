@@ -46,7 +46,7 @@ const Header = () => {
 
         <div
           id="DivHamb"
-          className="z-10 absolute right-0 md:top-14 sm:top-12 border-black min-h-fit min-w-fit text-md 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-lg overflow-hidden"
+          className="z-10 absolute right-0 md:top-14 sm:top-12 border-black min-h-fit min-w-fit text-lg 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-lg overflow-hidden"
           style={{"opacity": isMenuOpen ? 0 : 1}}
         >
           {/* Acomodar el menu usando anchor en cuanto ya sea funcional en los navegadores */}
