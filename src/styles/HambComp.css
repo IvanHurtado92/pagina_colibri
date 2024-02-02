@@ -2,4 +2,5 @@
     color: black;
     background: none;
     border: none;
+    transition: background-color 1s;
 }

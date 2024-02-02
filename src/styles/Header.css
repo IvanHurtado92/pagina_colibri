@@ -50,6 +50,7 @@
   }
   #DivHamb{
     visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -67,11 +68,16 @@
   }
   #DivHamb{
     visibility: hidden;
+    opacity: 0;
   }
 }
 
 #DivHamb{
-  transition: opacity 0.5s, visibility 0.5s;
+  background-color: rgba(167, 243, 208, 0.897);
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 5px;
+  transition: opacity 0.5s;
 }
 /* #TopLogo:hover{ no se ve cool
   box-shadow: 0 0 5px white, 0 0 10px white;

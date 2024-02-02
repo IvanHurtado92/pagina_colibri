@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div className="sticky top-0 z-20">
-      <header className="Encabezado h-12 text-2xl  2xl:h-24 2xl:text-4xl xl:h-20 xl:text-3xl lg:h-18 lg:text-2xl md:h-14 md:text-3xl">
+      <header className="Encabezado h-12 text-2xl 2xl:h-24 2xl:text-4xl xl:h-20 xl:text-3xl lg:h-18 lg:text-2xl md:h-14 md:text-3xl">
         <button className="mx-4 my-1 w-24">
           {/* Boton de inicio, regresará hasta arriba */}
           <img id="TopLogo" src={logo} className="Logo" alt="Logo del Salón Colibrí"></img>
@@ -44,11 +44,9 @@ const Header = () => {
 
       </header>
 
-      {/* Conditional rendering for the menu  "short-circuit evaluation."*/}
-      
         <div
           id="DivHamb"
-          className="z-10 absolute right-2 md:top-14 sm:top-12 border border-solid border-black bg-emerald-200 min-h-fit min-w-fit text-2xl 2xl:text-4xlxl:text-3xl lg:text-2xl md:text-3xl rounded-lg overflow-hidden"
+          className="z-10 absolute right-0 md:top-14 sm:top-12 border-black min-h-fit min-w-fit text-md 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-lg overflow-hidden"
           style={{"opacity": isMenuOpen ? 0 : 1}}
         >
           {/* Acomodar el menu usando anchor en cuanto ya sea funcional en los navegadores */}
@@ -68,3 +66,24 @@ const Header = () => {
 };
 
 export default Header;
+
+
+{/* Conditional rendering for the menu  "short-circuit evaluation."*/}
+// {isMenuOpen && (
+//   <div
+//     id="DivHamb"
+//     className="z-10 absolute right-2 md:top-14 sm:top-12 border border-solid border-black bg-emerald-200 min-h-fit min-w-fit text-2xl 2xl:text-4xlxl:text-3xl lg:text-2xl md:text-3xl rounded-lg overflow-hidden"
+//   >
+//     {/* Acomodar el menu usando anchor en cuanto ya sea funcional en los navegadores */}
+//     <div className="block text-center">
+//       {componentes.map((comp) => {
+//         return (
+//           <div>
+//             <HambComp nombre={comp.nombre} />
+//             <br />
+//           </div>
+//         );
+//       })}
+//     </div>
+//   </div>
+// )}
