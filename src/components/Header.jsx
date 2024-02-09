@@ -51,6 +51,9 @@ const Header = () => {
         >
           {/* Acomodar el menu usando anchor en cuanto ya sea funcional en los navegadores */}
           <div className="block text-center">
+            <button className="text-center px-1 py-1 w-full hover:bg-white active:bg-gray-300">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
             {componentes.map((comp) => {
               return (
                 <div>
