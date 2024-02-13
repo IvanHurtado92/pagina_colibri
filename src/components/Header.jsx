@@ -2,6 +2,7 @@ import "../styles/Header.css";
 import logo from "../Images/colibri_cabeza.png";
 import HambComp from "./HambComp";
 import { useState } from "react";
+import OutsideClickHandler from 'react-outside-click-handler';
 
 const componentes = [
   { nombre: "Fotos", funcion: null },
@@ -12,11 +13,19 @@ const componentes = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hambClickeado, setHambClickeado] = useState(false);
 
   const abrirMenu = () => {
     setIsMenuOpen(!isMenuOpen); //cada que se usa el método set, el componente se recarga con la variable cambiada y todos los cambios al componente que involucre
-    console.log(!isMenuOpen);
+    setHambClickeado(!hambClickeado);
+    console.log("IsMenu ---> Menu abierto: " + !isMenuOpen + ", Hamburguesa Clickeada: " + !hambClickeado);
   };
+
+  const cerrarMenu = () => {
+    setHambClickeado(false);
+    console.log("CerraMenu ---> Menu abierto: " + isMenuOpen + ", Hamburguesa Clickeada: " + hambClickeado);
+  }
+
 
   // if (window.innerWidth >1060) setIsMenuOpen(false) // hay un error aqui, no se si sea por llamar dos veces la funcion setIsMenuOpen
 
@@ -44,16 +53,14 @@ const Header = () => {
 
       </header>
 
+      <OutsideClickHandler onOutsideClick={cerrarMenu}>
         <div
           id="DivHamb"
           className="z-10 absolute right-0 md:top-14 sm:top-12 border-black min-h-fit min-w-fit text-lg 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-lg overflow-hidden"
-          style={{"opacity": isMenuOpen ? 1 : 0}}
+          style={{"opacity": (isMenuOpen && hambClickeado) ? 1 : 0}}
         >
           {/* Acomodar el menu usando anchor en cuanto ya sea funcional en los navegadores */}
           <div className="block text-center">
-            <button className="text-center px-1 py-1 w-full hover:bg-white active:bg-gray-300">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
             {componentes.map((comp) => {
               return (
                 <div>
@@ -64,6 +71,7 @@ const Header = () => {
             })}
           </div>
         </div>
+      </OutsideClickHandler>
     </div>
   );
 };
