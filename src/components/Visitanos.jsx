@@ -1,9 +1,9 @@
 import "../styles/Visitanos.css";
 
 export default function Visitanos({ className, titulos }) {
-  const clases = "fondoV " + className;
   return (
-    <div className={clases}>
+    <div className={`fondoV ${className}`}> 
+    {/* agregamos la clase personalizada mas el className usando template strings para ahorrar líneas */}
       <b className={titulos}>Visítanos</b>
       <div className="h-20"></div>
       <div className="flex justify-center">

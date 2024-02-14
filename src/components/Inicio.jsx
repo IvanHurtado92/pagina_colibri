@@ -2,13 +2,12 @@ import logo from "../Images/logoSalon.png";
 import "../styles/Inicio.css";
 
 const Inicio = ({ className, titulos }) => {
-  const clases = "" + className;
   return (
-    <div className={clases}>
+    <div className={className}>
       <div className="justify-center flex">
         <img
           src={logo}
-          className="colibri h-auto w-5/6 2xl:w-5/12 xl:w-5/12 lg:w-6/12 md:w-7/12"
+          className="colibri h-auto w-5/6 2xl:w-5/12 xl:w-5/12 lg:w-6/12 md:w-7/12 z-0"
           alt="Logo del Salón Colibrí"
         ></img>
       </div>

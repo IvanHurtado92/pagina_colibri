@@ -1,18 +1,5 @@
-/* make the background color of the logo a bit darker */
-
-/* .colibri {
-  width: 40vw;
-  height: auto;
-} */
-
-/* make a class that makes it's text brigter */
 
 .brighter {
   text-shadow: 0 0 15px white;
   transition: color 1s, text-shadow 1s;
 }
-
-/* aplicar  */
-/* .contenedor {
-  @apply bg-slate-500;
-} */

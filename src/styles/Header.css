@@ -64,7 +64,7 @@
   #menu {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s, visibility 0.5s;
+    transition: all 0.5s;
   }
   #DivHamb{
     visibility: hidden;
@@ -83,3 +83,11 @@
   box-shadow: 0 0 5px white, 0 0 10px white;
   transition: text-shadow 1s;
 } */
+
+*:not(div){
+    z-index: 10;
+}
+
+.indice{
+  z-index: -200;
+}
