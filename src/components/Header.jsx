@@ -6,7 +6,6 @@ import { useState } from "react";
 const componentes = [
   { nombre: "Fotos", funcion: null },
   { nombre: "Información y Costos", funcion: null },
-  { nombre: "Contactos", funcion: null },
   { nombre: "Visítanos", funcion: null },
 ];
 
