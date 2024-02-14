@@ -35,13 +35,13 @@ const Info = ({ className, titulos }) => {
             <li>Futbolito, esfera giratoria</li>
             <li>Puente colgante, resbaladilla y tubo de bomberos</li>
             <li>
-            <li>Cocina con estufa, refrigerador y hielera</li>
+              <li>Cocina con estufa, refrigerador y hielera</li>
               <i>Inflable con costo adicional de $400</i>
             </li>
             <br />
           </ul>
         </div>
-        
+
         <div>
           <img
             src={img1}

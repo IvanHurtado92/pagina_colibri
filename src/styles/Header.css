@@ -23,7 +23,6 @@
   transition: color 1s, text-shadow 1s;
 }
 
-
 /* make a class for the logo to be the size of the header height */
 .Logo {
   /* //make the logo height to fit inside the header */
@@ -31,8 +30,8 @@
   width: auto;
 }
 
-@media screen and (max-width:1010px){
-  .Rm{
+@media screen and (max-width: 1010px) {
+  .Rm {
     display: none;
   }
 }
@@ -48,7 +47,7 @@
     opacity: 1;
     transition: opacity 0.2s;
   }
-  #DivHamb{
+  #DivHamb {
     visibility: visible;
     opacity: 1;
   }
@@ -59,35 +58,30 @@
     visibility: visible;
     opacity: 1;
     transition: opacity 0.5s;
-    
   }
   #menu {
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s;
   }
-  #DivHamb{
+  #DivHamb {
     visibility: hidden;
     opacity: 0;
   }
 }
 
-#DivHamb{
+#DivHamb {
   background-color: rgba(167, 243, 208, 0.897);
-  border-left:2px solid black;
-  border-bottom:2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
   border-bottom-left-radius: 5px;
   transition: opacity 0.5s;
 }
-/* #TopLogo:hover{ no se ve cool
-  box-shadow: 0 0 5px white, 0 0 10px white;
-  transition: text-shadow 1s;
-} */
 
-*:not(div){
-    z-index: 10;
+*:not(div) {
+  z-index: 10;
 }
 
-.indice{
+.indice {
   z-index: -200;
 }

@@ -5,8 +5,7 @@ import Fotos from "./components/Fotos";
 import Info from "./components/Info";
 import Visitanos from "./components/Visitanos";
 
-const disenioInicio =
-  "p-20 pt-28 text-center overflow-hidden min-h-screen  ";
+const disenioInicio = "p-20 pt-28 text-center overflow-hidden min-h-screen  ";
 
 const disenioSeccion =
   "p-20 pt-28 text-center overflow-hidden min-h-screen max-h-fit"; //corregir!!!!

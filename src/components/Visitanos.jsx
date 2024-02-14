@@ -2,8 +2,8 @@ import "../styles/Visitanos.css";
 
 export default function Visitanos({ className, titulos }) {
   return (
-    <div className={`fondoV ${className}`}> 
-    {/* agregamos la clase personalizada mas el className usando template strings para ahorrar líneas */}
+    <div className={`fondoV ${className}`}>
+      {/* agregamos la clase personalizada mas el className usando template strings para ahorrar líneas */}
       <b className={titulos}>Visítanos</b>
       <div className="h-20"></div>
       <div className="flex justify-center">
@@ -18,12 +18,12 @@ export default function Visitanos({ className, titulos }) {
           title="ubi"
         ></iframe>
       </div>
-        <br />
-        <b>Dirección</b>
-        <br />
-        <p>Av. Prof. Enrique Olivares Santana #505</p>
-        <p>Boulevares 1ra sección</p>
-        <p>Aguascalientes, Ags.</p>
+      <br />
+      <b>Dirección</b>
+      <br />
+      <p>Av. Prof. Enrique Olivares Santana #505</p>
+      <p>Boulevares 1ra sección</p>
+      <p>Aguascalientes, Ags.</p>
     </div>
   );
 }
