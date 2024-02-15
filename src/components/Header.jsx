@@ -49,7 +49,7 @@ const Header = () => {
             style={{ height: "50%", color: "white" }}
             onClick={abrirMenu}
           >
-            <ion-icon name="menu"></ion-icon>
+            <ion-icon name={isMenuOpen ? "close" : "menu"}></ion-icon>
           </button>
         </header>
 
