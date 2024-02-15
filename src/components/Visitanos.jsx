@@ -19,7 +19,13 @@ export default function Visitanos({ className, titulos }) {
         ></iframe>
       </div>
       <br />
-      <b>Dirección</b>
+      <div className="flex justify-center">
+        <a className="underline text-white hover:text-blue-800 visited:text-purple-600" href="https://www.google.com/maps/dir//Prof.+Enrique+Olivares+Santana+505,+Bulevares+1ra+Secc,+20288+Aguascalientes,+Ags./@21.853446,-102.3852353,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8429ec3372c5e49d:0x24206c7153cc7620!2m2!1d-102.3028339!2d21.8534661?entry=ttu" target="blank">
+          <b>Link de la dirección</b>
+        </a>
+      </div>
+      <br />
+      <b className="text-white">Dirección</b>
       <br />
       <p>Av. Prof. Enrique Olivares Santana #505</p>
       <p>Boulevares 1ra sección</p>
