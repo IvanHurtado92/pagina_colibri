@@ -7,6 +7,7 @@ const componentes = [
   { nombre: "Fotos", funcion: null },
   { nombre: "Información y Costos", funcion: null },
   { nombre: "Visítanos", funcion: null },
+  { nombre: "Contactos", funcion: null }
 ];
 
 const Header = () => {

@@ -5,13 +5,17 @@ const FotoSlider = ({ slides, className }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const irSiguiente = () => {
-    const esUltimaImg = currentIndex === slides.length -1
+    const esUltimaImg = currentIndex === slides.length-1
     esUltimaImg ? setCurrentIndex(0) : setCurrentIndex(currentIndex+1)
   }
 
   const irAtras = () => {
     const esPrimeraImg = currentIndex === 0
     esPrimeraImg ? setCurrentIndex(slides.length-1) : setCurrentIndex(currentIndex-1)
+  }
+
+  const goToSlide = (indice) => {
+    setCurrentIndex(indice)
   }
 
 
@@ -27,9 +31,13 @@ const FotoSlider = ({ slides, className }) => {
           alt={slides[currentIndex].titulo}
         />
       </div>
-      <div className="flex justify-center text-center">
-        <p>{slides[currentIndex].titulo}</p>
+      <div className="flex justify-center py-2">
+        {slides.map((slide,id) => (
+            <div className="px-5 text-4xl cursor-pointer z-20" onClick={() => goToSlide(id)}>●</div>
+        ))}
       </div>
+        <br />
+        <p>{slides[currentIndex].titulo}</p>
     </div>
   );
 };
