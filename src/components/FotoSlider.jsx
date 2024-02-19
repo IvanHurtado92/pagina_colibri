@@ -21,8 +21,8 @@ const FotoSlider = ({ slides, className }) => {
   };
 
   return (
-    <div className={className}>
-      <div className="flex justify-center text-center relative 2xl:w-1/2 xl:w-1/2 lg:w-3/5 md:3/5 sm:w-4/5 w-11/12 h-auto">
+    <div className={`w-full `}>
+      <div id="Slider" className="flex justify-center items-center relative text-center">
         <button
           className="flechas absolute top-2/4 left-1 z-30"
           onClick={irAtras}
@@ -30,14 +30,15 @@ const FotoSlider = ({ slides, className }) => {
           <ion-icon name="arrow-dropleft"></ion-icon>
         </button>
         <button
-          className="flechas absolute top-2/4 right-1 z-30"
+          className="flechas absolute top-2/4 right-1 z-20"
           onClick={irSiguiente}
         >
           <ion-icon name="arrow-dropright"></ion-icon>
         </button>
         <img
           src={slides[currentIndex].url}
-          className=" border-solid border-black border-2 rounded-3xl"
+          className=" border-solid border-black border-2 rounded-3xl 2xl:w-1/2 xl:w-1/2 lg:w-3/5 md:3/5 sm:w-4/5 w-11/12 h-auto"
+          style={{height:'auto', width:'100%'}}
           alt={slides[currentIndex].titulo}
         />
       </div>
