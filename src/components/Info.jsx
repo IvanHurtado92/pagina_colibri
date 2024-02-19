@@ -16,9 +16,9 @@ const Info = ({ className, titulos }) => {
   return (
     <div className={clases}>
       <b className={titulos}>Información y Costos</b>
-      <div className="h-20"></div>
+      <div className="h-10"></div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
-        <div className="lista">
+        <div className="lista px-6">
           <b>Costo</b>
           <br />
           <ul>
@@ -44,7 +44,7 @@ const Info = ({ className, titulos }) => {
 
         <div>
           <img
-            src={img1}
+            src='https://i.ibb.co/KL4n7Tc/3.jpg'
             alt="Imagen de vista exterior del salón"
             className="border-2 border-solid border-black rounded-md "
           />
@@ -53,7 +53,7 @@ const Info = ({ className, titulos }) => {
           <button onClick={accion} className="btn bg-emerald-600 border border-solid border-black rounded">{text}</button> */}
         </div>
 
-        <div className="lista">
+        <div className="lista px-6">
           <ul>
             <li>
               <b>Horarios de fiestas</b>
